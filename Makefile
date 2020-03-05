@@ -1,10 +1,9 @@
 # compila los archivos e=necesarios
 all: lista
 lista: main.o
-	g++ main.o -o lista
-	./lista
+	g++ main.o -o ejecutable
+	./ejecutable
 main.o: 
-   g++ -c main.cpp
-	
+	g++ -c main.cpp
 clean:	
 	rm -rf *o main
